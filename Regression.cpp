@@ -1,3 +1,4 @@
+//2019-nCoV 模型训练
 #include <iostream>
 #include <cmath>
 #include <ctime>
