@@ -96,7 +96,7 @@ inline double regressionModel::initFunc(double *weighs, double bias, int hp, int
 }	//回归函数初始化
 
 inline double regressionModel::lossFunc(double regular) {
-	double sum;
+	double sum = 0;
 	for (int i = 0; i < sampleNum; i++)
 		sum += pow(samples[dimensions][i] - samples[dimensions + 1][i], 2);
 	sum += regular * regMain;
